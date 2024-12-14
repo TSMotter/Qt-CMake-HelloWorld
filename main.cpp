@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "qdialog.h"
 #include <QApplication>
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +16,8 @@ int main(int argc, char *argv[])
 
     MainWindow w(&dialog);
     w.show();
+    qDebug() << "[#1486] After w.show()";
 
     return app.exec();
+    qDebug() << "[#1486] After app.exec()";
 }
