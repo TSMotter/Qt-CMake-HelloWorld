@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    MainWindow w;
+    MainWindow w(&dialog);
     w.show();
 
     return app.exec();

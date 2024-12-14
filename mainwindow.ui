@@ -36,7 +36,7 @@
      <x>0</x>
      <y>0</y>
      <width>243</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -45,12 +45,29 @@
     </property>
     <addaction name="actionExit"/>
    </widget>
+   <widget class="QMenu" name="menuLog_Out">
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>&amp;Log Out</string>
+    </property>
+    <addaction name="actionLog_out"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuLog_Out"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionExit">
    <property name="text">
     <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionLog_out">
+   <property name="text">
+    <string>&amp;Log out</string>
    </property>
   </action>
  </widget>
