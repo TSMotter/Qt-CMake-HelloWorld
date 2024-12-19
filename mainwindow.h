@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "qdialog.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -12,8 +13,10 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QObject *login, QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+    void ShowLogin();
 
 private slots:
     void on_actionExit_triggered();
@@ -21,6 +24,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    CustomDialog m_dialog;
 };
 
 #endif // MAINWINDOW_H
